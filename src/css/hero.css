@@ -113,8 +113,11 @@
     margin-bottom: 28px;
   }
   .hero-text {
+    font-weight: 400;
+    font-style: normal;
     font-size: 16px;
-    line-height: 1, 50;
+    line-height: 1.5;
+  
     margin-bottom: 46px;
   }
   .hero-button {
@@ -125,7 +128,7 @@
     font-family: inherit;
     font-weight: 500;
     font-size: 13px;
-    line-height: 1, 5;
+    line-height: 1.5;
     color: var(--all-text-color);
     background-color: var(--button-green);
     cursor: pointer;
