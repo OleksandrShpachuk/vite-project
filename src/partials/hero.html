@@ -1,7 +1,7 @@
 <section class="hero-section">
     <div class="hero-container container">
       <div class="hero-content">
-        <h1 class="hero-title h1-title">
+        <h1 class="hero-title ">
           Enjoy Your Favorite Food From Anywhere
         </h1>
         <p class="hero-text">
@@ -13,18 +13,38 @@
         <button class="hero-button">Order Now</button>
       </div>
 
-      <!-- <div class="hero-photos-wrap">
-        <img class="hero-photos" src="./img/Foto-1.jpg" alt="Food" width="528" height="528" />
-      </div> -->
+         <!-- <div class="hero-photos-wrap">
+         <img class="hero-photos" src="./img/Foto-1.jpg" alt="Food" width="528" height="528" />
+      </div>  -->
 
       <div class="hero-slider autoplay">
         <div class="hero-slider-item">
-          <img class="hero-slider-photo" src="./img/Foto-1.jpg" alt="Food" width="528" height="528">
+          <picture>
+
+            <source srcset="./img/Foto-1.jpg 1x, ./img/hero-photo1@2x.jpg 2x" media="(min-width: 1280px)" >
+            <source srcset="./img/hero-photo1-tab.jpg 1x./img/hero-photo1-tab@2x.jpg 2x" media="(min-width: 768px)">
+
+            <img class="hero-slider-photo" src="./img/Foto-1.jpg" alt="Food" width="528" height="528"> 
+          </picture>
+          
         </div>
-        <div class="hero-slider-item"><img class="hero-slider-photo" src="./img/hero-photo2.jpg" alt="Food" width="528"
-            height="528"></div>
-        <div class="hero-slider-item"><img class="hero-slider-photo" src="./img/hero-photo3.jpg" alt="Food" width="528"
-            height="528"></div>
+        <div class="hero-slider-item">
+          <picture>
+            <source srcset="./img/hero-photo2.jpg 1x, ./img/hero-photo2@2x.jpg 2x" media="(min-width: 1280px)">
+            <source srcset=" ./img/hero-photo2-tab.jpg 1x, ./img/hero-photo2-tab@2x.jpg 2x" media="(min-width: 768px)">
+
+            <img class="hero-slider-photo" src="./img/hero-photo2.jpg" alt="Food" width="528"
+            height="528">
+          </picture>
+        </div>
+        <div class="hero-slider-item">
+          <picture>
+            <source srcset="./img/hero-photo3.jpg 1x, ./img/hero-photo3@2x.jpg 2x" media="(min-width: 1280px)">
+            <source srcset="./img/hero-photo3-tab.jpg 1x, ./img/hero-photo3-tab@2x.jpg 2x" media="(min-width: 768px)">
+          <img class="hero-slider-photo" src="./img/hero-photo3.jpg" alt="Food" width="528"
+            height="528">
+          </picture>
+        </div>
 
       </div>
     </div>

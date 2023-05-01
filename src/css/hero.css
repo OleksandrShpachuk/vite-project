@@ -1,26 +1,105 @@
 .hero-container {
-    width: 1248px;
+  box-sizing: border-box;
+  max-width: 312px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  font-style: normal;
+}
+
+.hero-title {
+  display: block;
+  width: 280px;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 1.18;
+  margin-bottom: 28px;
+}
+
+.hero-slider {
+  display: none;
+}
+.hero-photos-wrap {
+  display: none;
+}
+
+.hero-text {
+ font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  margin-bottom: 32px;
+} 
+.hero-button {
+  display: inline-block;
+  min-width: 98px;
+  min-height: 32px;
+  padding: 6px 18px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--all-text-color);
+  background-color: var(--button-green);
+  cursor: pointer;
+  border: transparent;
+  border-radius: 30px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #ffe450;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    position: relative;
+
+    max-width: 736px;
+    padding-top: 60px;
+    padding-bottom: 73px;
+  }
+
+ 
+
+  /* .hero-photos-wrap {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+
+
     display: flex;
-    padding-left: 16px;
-    padding-right: 14px;
-    padding-bottom: 0;
-    justify-content: space-between;
+    width: 336px;
+    height: 320px;
+    background-color: #ffe450;
+ 
+
+    justify-content: center;
     align-items: center;
-    /* тимчасова рамка */
-    outline: 2px dashed tomato;
+    padding: 0;
+    margin: 0;
+  } */
+
+  .hero-title {
+  width: 537px;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 44px;
   }
-  .hero-content {
-    width: 511px;
-    padding-top: 159px;
-    padding-bottom: 164px;
+  .hero-text {
+    width: 336px;
+    font-size: 16px;
+line-height: 1.5;
+    margin-bottom: 37px;
   }
-  
   .hero-slider {
-    
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
     display: flex;
-    width: 580px;
-    height: 580px;
-    background-image: url(../img/Ellipse\ 11.png);
+    width: 336px;
+    height: 320px;
+    background-image: url(../img/Ellipse-tab.png);
     background-size: 100%;
    
    
@@ -35,35 +114,37 @@
   }
   .hero-slider-photo {
     position: relative;
-    left: 25px;
+    left: -2px; 
+    top: 8px;
     border-radius: 50%;
-    width: 528px;
-    margin: 0px;
+    width: 292px;
+    margin: auto;
     
   }
    
   
   .slick-prev {
+    z-index: 100;
   display: block;
   left: -10px;
-  width: 40px;
-  height: 48px;
+  width: 28px;
+  height: 34px;
   border: none;
-  padding: 5px 13px;
+  /* padding: 5px 13px; */
   background-color: var(--white);
   border: none;
   border-radius: 8px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   background-image: url(../img/left.svg); 
   background-repeat: no-repeat;
-  background-size: 16px 29px;
+  background-size: 11px 20px;
   background-position: center;
   }
   .slick-prev:hover, .slick-prev:hover
    { 
   background-image: url(../img/left-color.svg);
   background-repeat: no-repeat;
-  background-size: 16px 29px;
+  background-size: 11px 20px;
   background-position: center; 
   background-color: var(--white); }
   
@@ -76,24 +157,24 @@
     display: block;
   right: -10px;
   
-  width: 40px;
-  height: 48px;
+  width: 28px;
+  height: 34px;
   border: none;
-  padding: 5px 13px;
+  
   background-color: var(--white);
   border: none;
   border-radius: 8px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   background-image: url(../img/right.svg); 
   background-repeat: no-repeat;
-  background-size: 16px 29px;
+  background-size: 11px 20px;
   background-position: center;
   }
   .slick-next:hover, .slick-next:focus
    { 
      background-image: url(../img/right-color.svg);
      background-repeat: no-repeat;
-  background-size: 16px 29px;
+  background-size: 11px 20px;
   background-position: center; 
   background-color: var(--white); 
   }
@@ -108,34 +189,69 @@
   content: "";
   
   }
+
   
-  .hero-title {
-    margin-bottom: 28px;
-  }
-  .hero-text {
-    font-size: 16px;
-    line-height: 1, 50;
-    margin-bottom: 46px;
-  }
-  .hero-button {
-    display: inline-block;
-    min-width: 98px;
-    min-height: 32px;
-    padding: 6px 18px;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1, 5;
-    color: var(--all-text-color);
-    background-color: var(--button-green);
-    cursor: pointer;
-    border: transparent;
-    border-radius: 30px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-  }
-  
-  .hero-button:hover,
-  .hero-button:focus {
-    background-color: #ffe450;
-  }
+}
+
+@media screen and (min-width: 1280px){
+  .hero-container {
+    width: 1280px;
+    padding-top: 159px;
+    padding-bottom: 164px;
+}
+.hero-content{
+  width: 511px;
+}
+.hero-title {
+
+width: 100%;
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 28px;
+}
+.hero-text {
+  width: 100%;
+  font-size: 15px;
+  line-height: 1.50;
+  margin-bottom: 46px;
+}
+
+.hero-slider {
+  width: 580px;
+  height: 580px;
+  background-image: url(../img/Ellipse\ 11.png);
+}
+
+
+.hero-slider-photo {
+  top:-2px;
+  width: 528px;
+}
+ 
+
+.slick-prev {
+left: -10px;
+width: 40px;
+height: 48px;
+background-size: 16px 29px;
+
+}
+.slick-prev:hover, .slick-prev:hover
+ { 
+
+background-size: 16px 29px;}
+
+
+
+.slick-next {
+right: -10px;
+width: 40px;
+height: 48px;
+background-size: 16px 29px;
+
+}
+.slick-next:hover, .slick-next:focus
+ { background-size: 16px 29px;}
+}
+
   
