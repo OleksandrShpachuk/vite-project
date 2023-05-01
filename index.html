@@ -10,7 +10,7 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     
     <script type="module" crossorigin src="/vite-project/assets/index-f4935ee6.js"></script>
-    <link rel="stylesheet" href="/vite-project/assets/index-e2cad209.css">
+    <link rel="stylesheet" href="/vite-project/assets/index-1b803404.css">
   </head>
 
   <body>
@@ -19,7 +19,7 @@
       <section class="hero-section">
     <div class="hero-container container">
       <div class="hero-content">
-        <h1 class="hero-title h1-title">
+        <h1 class="hero-title ">
           Enjoy Your Favorite Food From Anywhere
         </h1>
         <p class="hero-text">
@@ -31,23 +31,43 @@
         <button class="hero-button">Order Now</button>
       </div>
 
-      <!-- <div class="hero-photos-wrap">
-        <img class="hero-photos" src="./img/Foto-1.jpg" alt="Food" width="528" height="528" />
-      </div> -->
+         <!-- <div class="hero-photos-wrap">
+         <img class="hero-photos" src="./img/Foto-1.jpg" alt="Food" width="528" height="528" />
+      </div>  -->
 
       <div class="hero-slider autoplay">
         <div class="hero-slider-item">
-          <img class="hero-slider-photo" src="/vite-project/assets/Foto-1-87a1c154.jpg" alt="Food" width="528" height="528">
+          <picture>
+
+            <source srcset="/vite-project/assets/Foto-1-87a1c154.jpg 1x, /vite-project/assets/hero-photo1@2x-ebc56ca8.jpg 2x" media="(min-width: 1280px)" >
+            <source srcset="/vite-project/assets/hero-photo1-tab-d65250d2.jpg 1x./img/hero-photo1-tab@2x.jpg 2x" media="(min-width: 768px)">
+
+            <img class="hero-slider-photo" src="/vite-project/assets/Foto-1-87a1c154.jpg" alt="Food" width="528" height="528"> 
+          </picture>
+          
         </div>
-        <div class="hero-slider-item"><img class="hero-slider-photo" src="/vite-project/assets/hero-photo2-a0986920.jpg" alt="Food" width="528"
-            height="528"></div>
-        <div class="hero-slider-item"><img class="hero-slider-photo" src="/vite-project/assets/hero-photo3-fb1dc1c7.jpg" alt="Food" width="528"
-            height="528"></div>
+        <div class="hero-slider-item">
+          <picture>
+            <source srcset="/vite-project/assets/hero-photo2-a0986920.jpg 1x, /vite-project/assets/hero-photo2@2x-34d2b514.jpg 2x" media="(min-width: 1280px)">
+            <source srcset="/vite-project/assets/hero-photo2-tab-f9b12094.jpg 1x, /vite-project/assets/hero-photo2-tab@2x-967c156c.jpg 2x" media="(min-width: 768px)">
+
+            <img class="hero-slider-photo" src="/vite-project/assets/hero-photo2-a0986920.jpg" alt="Food" width="528"
+            height="528">
+          </picture>
+        </div>
+        <div class="hero-slider-item">
+          <picture>
+            <source srcset="/vite-project/assets/hero-photo3-fb1dc1c7.jpg 1x, /vite-project/assets/hero-photo3@2x-bb3d3a78.jpg 2x" media="(min-width: 1280px)">
+            <source srcset="/vite-project/assets/hero-photo3-tab-45be7c73.jpg 1x, /vite-project/assets/hero-photo3-tab@2x-05494d9f.jpg 2x" media="(min-width: 768px)">
+          <img class="hero-slider-photo" src="/vite-project/assets/hero-photo3-fb1dc1c7.jpg" alt="Food" width="528"
+            height="528">
+          </picture>
+        </div>
 
       </div>
     </div>
   </section>
-      <section class="offerings-section">
+       <section class="offerings-section">
     <div class="rectangle-in-container container">
       <div class="offerings-bl">
         <img src="/vite-project/assets/aple-c45f6e0b.jpg" alt="photo green apple" width="550" height="604" class="img-apple" />
@@ -278,9 +298,9 @@
     </div>
     </div>
 </section>
-      
+       
     </main>
-    <footer class="footer">
+     <footer class="footer">
     <div class="container footer-conteiner">
       <span class="first-flex">
         <nav class="footer-nav">
